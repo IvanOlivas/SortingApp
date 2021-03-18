@@ -12,6 +12,7 @@ def sort_list():
    
     sortIt.sort(key=lambda s: (len(s), s))
     
+    #ask user if they want to reverse the sort
     val = input("Would you like to reverse the sort? (enter 1 for yes, 2 for no):")
     
     if val == 1:
