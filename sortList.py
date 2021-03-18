@@ -11,5 +11,10 @@ def sort_list():
     #sortIt.sort()  #sort by the length of the string
    
     sortIt.sort(key=lambda s: (len(s), s))
+    
+    val = input("Would you like to reverse the sort? (enter 1 for yes, 2 for no):")
+    
+    if val == 1:
+        sortIt.sort(reverse=True)
 
     return sortIt;
